@@ -115,40 +115,16 @@ const SEO: FC<Props> = ({
         key="og:url"
         property="og:url"
         content={openGraph?.url ?? config.openGraph.url}
-      ></meta>
+      />
       {openGraph?.locale && (
         <meta key="og:locale" property="og:locale" content={openGraph.locale} />
-      )}
-      {openGraph?.images?.length
-        ? openGraph.images.map((img, index) => ogImage(img, index))
-        : ogImage(config.openGraph.images[0], 0)}
-      {config.twitter.cardType && (
-        <meta
-          key="twitter:card"
-          name="twitter:card"
-          content={config.twitter.cardType}
-        />
-      )}
-      {config.twitter.site && (
-        <meta
-          key="twitter:site"
-          name="twitter:site"
-          content={config.twitter.site}
-        />
-      )}
-      {config.twitter.handle && (
-        <meta
-          key="twitter:creator"
-          name="twitter:creator"
-          content={config.twitter.handle}
-        />
       )}
       <meta key="robots" name="robots" content={robots ?? 'index,follow'} />
       <meta
         key="googlebot"
         name="googlebot"
         content={robots ?? 'index,follow'}
-      ></meta>
+      />
       {children}
     </Head>
   )
