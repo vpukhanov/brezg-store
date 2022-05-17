@@ -1,7 +1,7 @@
 {
   "name": "Brezg Jewelry",
   "short_name": "Brezg Jewelry",
-  "description": "Brezg studio provides handmade jewelry produced from natural stone and pearl",
+  "description": "Brezg Studio provides handmade jewelry produced from natural stone and pearl",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",
